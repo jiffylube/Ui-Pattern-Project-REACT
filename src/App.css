@@ -1,38 +1,49 @@
+/* * {
+  border: solid red;
+} */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: "Nanum Brush Script", cursive;
+  padding: 40px;
+  background-color: pink;
+  margin: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  row-gap: 20px;
+  column-gap: 12px;
+}
+
+nav {
+  font-size: 175%;
+  /* background-color: rgb(168, 121, 216); */
+  background-image: linear-gradient(132.6deg, rgba(71, 139, 214, 1) 23.3%, rgba(37, 216, 211, 1) 84.7%);
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 25px;
   color: white;
+  padding: 20px;
+  height: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.BoxForCards {
+  /* border: solid red; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Card {
+  text-align: center;
+  /* font-size: 125%; */
+  color: black;
+  /* border: 1px solid black; */
+  /* margin-top: -1px; */
+  min-height: 150px;
+  width: 200px;
+  transition: all .6s ease;
+  padding: 5px;
+}
+
+.Card:hover {
+  cursor: pointer;
+  background-color: rgb(247, 170, 183);
+  border: 1px solid black;
 }
